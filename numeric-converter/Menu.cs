@@ -34,6 +34,9 @@
                 case '3':
                     DecimalToHexMenu();
                     break;
+                case '4':
+                    HexToDecimalMenu();
+                    break;
                 case '0':
                     return false;
                 default:
@@ -92,6 +95,13 @@
             }
 
             Console.WriteLine($"Input {i} translates to {Converter.DecimalToHex(i)}.");
+        }
+
+        static public void HexToDecimalMenu()
+        {
+            Console.WriteLine("\n\nEnter some hexadecimal:");
+            string input = Console.ReadLine();
+            Console.WriteLine($"Input {input} translates to {Converter.HexToDecimal(input)}");
         }
     }
 }

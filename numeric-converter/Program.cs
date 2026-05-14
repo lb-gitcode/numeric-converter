@@ -4,7 +4,6 @@
     {
         static void Main(string[] args)
         {
-            Converter.HexToDecimal("3F");
             Menu.StartProgram();
         }
     }
