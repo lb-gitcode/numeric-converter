@@ -158,7 +158,6 @@
             int[] decs = new int[hex.Length];
             int decCount = 0;
             int power = hex.Length - 1;
-            Console.WriteLine("power = " + power);
 
             foreach (char c in hex)
             {
@@ -175,7 +174,6 @@
                         Console.WriteLine("Invalid input.");
                         return 0;
                     }
-                    Console.WriteLine(i);
                 }
                 decs[decCount++] = i;
             }
@@ -183,7 +181,6 @@
             for (int i = 0; i < decs.Length; i++)
             {
                 decs[i] = decs[i] * GetPowerOfSixteen(power--);
-                Console.WriteLine(decs[i]);
             }
 
             int sum = 0;
@@ -193,7 +190,6 @@
                 sum += i;
             }
 
-            Console.WriteLine(sum);
             return sum;
         }
     }
