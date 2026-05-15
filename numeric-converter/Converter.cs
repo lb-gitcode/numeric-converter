@@ -145,9 +145,13 @@
                 int r = GetRemainderDivBySixteen(dec);
                 if (r > 9)
                 {
-                    r = ConvertIntToLetter(r);
+                    char c = ConvertIntToLetter(r);
+                    hexString = c + hexString;
                 }
-                hexString = r + hexString;
+                else
+                {
+                    hexString = r + hexString;
+                }
                 dec = dec / 16;
             }
             return hexString;

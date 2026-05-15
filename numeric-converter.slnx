@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="numeric-converter/numeric-converter.csproj" />
+  <Project Path="Tests/Tests.csproj" Id="da44a09a-2772-4d6f-985d-86af125b00d3" />
 </Solution>

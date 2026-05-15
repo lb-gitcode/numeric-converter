@@ -20,6 +20,7 @@
                 "\n[1] - Decimal to Binary" +
                 "\n[2] - Binary to Decimal" +
                 "\n[3] - Decimal to Hexadecimal" +
+                "\n[4] - Hexadecimal to Decimal" +
                 "\n[0] - Exit program");
             char input = Console.ReadKey().KeyChar;
 
